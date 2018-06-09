@@ -1,34 +1,27 @@
-# React Recipes!
-
-In this directory, you will find:
-
-- A mostly empty React application
-- An `index.html` (in `public/index.html`) that has a recipe page written in HTML
-- A JSON array of recipes in `src/data/recipes.json`
+# React Recipes Pt 2!
 
 Your task is to:
 
-- Take the `index.html` and separate it out into components
-- Use the data in the recipes to populate those components
+- Have the Previous and Next buttons change the recipe that is displayed on the page
 
 Here are guided steps:
 
-## Move hardcoded HTML into App.js
+## Create a Constructor function inside App
 
-Take the HTML in the `public/index.html` file into the App.js component as JSX. Keep in mind you'll have to modify the JSX a little bit...because HTML and JSX are not the same!
+Inside of this constructor set the state property of "recipe" to recipes[0] and state property of recipeIndex to 0
 
-## Consider your components
+## Write methods on the App component to go to the next and prev recipes
 
-Take a look at the recipe page, and consider how you might want to break up one huge component into separate components.
+Call one recipeNext and the other recipePrev. Then BIND these functions to the App component inside of your constructor.
 
-You might have components for the `Recipe`, the `RecipeHeader`, `RecipeInstructions`, and `Footer`. If you want to add more, that's ok! React encourages modularity and reusability.
+recipeNext should incread the recipeIndex on state by one, and set recipe to be recipes[this.state.recipeIndex + 1].
 
-## Separate JSX into components
+recipePrev will do similar.
 
-Separate the single component into the separate components. Keep the hardcoded data about the Chicken Tikka Masala in the JSX for now.
+## attach your functions in JSX
 
-## Pass the data into components using props
+to next and previous buttons using onClick
 
-Instead of hard-coding all the data, try passing it in as props.
+## Bonus
 
-Pass the data in the `recipe` object in the App.js component into the child components by setting prop values.
+Modify your recipeNext and recipePrev functions (or conditionally render the buttons) so user can't navigate to recipes that don't exist (ie can't "next" when looking at last recipe in our array)
