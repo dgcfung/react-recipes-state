@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
 
-import recipes from '../data/recipes';
-
-const recipe = recipes[0];
-
 class Header extends Component {
   render() {
     return (

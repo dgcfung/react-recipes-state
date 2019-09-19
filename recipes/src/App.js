@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import './style.css';
-
-import recipes from '../data/recipes';
-import Header from '../Header';
-import Article from '../Article';
+import './App.css';
+import recipes from './data/recipes';
+import Header from './components/Header';
+import Article from './components/Article';
 
 const recipe = recipes[0];
 
