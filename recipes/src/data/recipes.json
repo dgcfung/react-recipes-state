@@ -2,7 +2,7 @@
   {
     "title": "Chicken Tikka Masala",
     "byline": {
-      "name": "Nigella Lawson", 
+      "name": "Nigella Lawson",
       "source": "https://cooking.nytimes.com/recipes/5593-chicken-and-apricot-masala"
     },
     "ingredients": [
@@ -42,7 +42,7 @@
     "activePrep": "20 minutes",
     "totalPrep": "25 minutes",
     "servings": 4,
-    "img": "/media/eggs.jpg"
+    "img": "/media/egg.jpg"
   },
   {
     "title": "Nectarine tart",
