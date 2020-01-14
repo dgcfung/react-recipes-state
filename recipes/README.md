@@ -14,7 +14,7 @@ Inside of this constructor set the state property of "recipe" to recipes[0] and 
 
 Call one recipeNext and the other recipePrev. Then BIND these functions to the App component inside of your constructor.
 
-recipeNext should incread the recipeIndex on state by one, and set recipe to be recipes[this.state.recipeIndex + 1].
+recipeNext should increase the recipeIndex on state by one, and set recipe to be recipes[this.state.recipeIndex + 1].
 
 recipePrev will do similar.
 
